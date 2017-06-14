@@ -1,0 +1,257 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{csquotes}
+\usepackage[margin=1in]{geometry}
+\usepackage{url}
+
+\title{About comprehensive quantity classes of which the value is nor algebraic nor reducible to algebraic irrational numbers}
+\date{1851}
+\author{Liouville, J.\thanks{%
+    Translator of this article: John Demessemaeker, Bernardo Meurer}}
+\begin{document}
+\maketitle
+\newpage
+\paragraph{1.}
+
+A long time ago, I gave a presentation about this subject at the Science
+Academy. I also had two Notes inserted in volume XVIII of Comptes rendus
+(pages 883 and 910; sessions of the 13th and 20th of May 1844). I believe these
+two Notes need to be reproduced and completed here. The first Note is formulated
+as the following:
+\begin{displayquote}
+  To give examples of continued fractions of which we can prove that their
+  value is not at the root of any algebraic equation
+    $$f(x)=ax^n + bx^{n-1} + \cdots + gx + h = 0$$
+  $a, b, \ldots, g$ being integers, it is sufficient to recollect that
+  $\frac{p_0}{q_0}$ and $\frac{p}{q}$, being two successive reductions of the
+  continued fraction that expresses the development of an immeasurable $x$ of
+  this equation, the incomplete quotient $\mu$, that comes after the reduction
+  $\frac{p}{q}$, serves to form the next reduction, ends up (that results from
+  a Lagrange formula, referencing the Memoires of Berlin, 1768) being, for
+  very big $q$ values, constantly inferior to
+    $$\pm\frac{df(p,q)}{qf(p,q)dp}$$
+  essentially a positive expression where we assume
+    $$f(p,q)=q^n f(\frac{p}{q}) = ap^n + bp^{n-1} q + \cdots + hq^n$$
+  Given that the abstraction is made of signs, we have now, with more certainty,
+    $$\mu < \frac{df(p,q)}{qdp}$$
+  since $f(p, q)$ is an equal integer at least to the unity if we admit (what
+  is allowed) that the equation
+    $$f(x) = 0$$
+  has been stripped of any measurable factor; $f(p,q) = 0$ would give, indeed,
+    $$f(\frac{p}{q}) = 0$$
+  Now represented by $f'(x)$ the differential of $f(x)$, the inequality above
+  will become
+    $$\mu < q^{n-2}f'(\frac{p}{q})$$
+  However, $f'(\frac{p}{q})$ is a finite quantity going towards the limit
+  $f'(x)$, like $\frac{p}{q}$ to the limit $x$. Designating with $A$ a certain
+  fixed number,which is superior to this limit, we will be sure to have
+    $$\mu < Aq^{n-2}$$
+
+  Thereby, the incomplete quotients of a continued fraction representing the
+  root $x$ of an algebraic equation of the degree $n$, in rational coefficients,
+  are subject to never pass the product of a certain constant number by the
+  force $(n-2)$\textsuperscript{nd} of the denominator of the previous
+  reduction.
+
+  It is sufficient to give the incomplete quotients $\mu$ a mode of formation
+  that makes them grow beyond a predetermined term, to obtain continued
+  fractions of which the value will not be able to satisfy any algebraic
+  equation itself; it will happen, for example, that if, starting with any first
+  incomplete quotient, we form every following $\mu$ with the help of the
+  previous reduced $\frac{p}{q}$, according to the law $\mu = q^q$, or according
+  to the law $\mu = q^m$, $m$  being the index of the $\mu$ row.
+
+  Moreover, the previous method, which offered the first, is not the only nor
+  is it the simplest that we can use. Let’s add that there are also analogue
+  theorems for ordinary series. In particular, we cite the series
+    $$\frac{1}{l} + \frac{1}{l^{1 \cdot 2}} + \frac{1}{l^{1\cdot 2\cdot 3}}
+    + \cdots + \frac{1}{l^{1\cdot 2\cdot 3\cdots m}} + \cdots$$
+  $l$ being a whole number.
+\end{displayquote}
+
+\paragraph{2.}
+
+The second Note contains a new and more simple demonstration of the theorem to
+which I was led by the Lagrange formula. The real power of our method, as we
+will see, is independent of this formula.
+\begin{displayquote}
+  If $x, x_1, x_2, \ldots, x_{n-1}$ are the $n$ roots (the first real, the others real or
+  imaginary) of the algebraic equation
+    $$f(x) = ax^n + bx^{n-1} + \cdots + gx + h = 0$$
+  which we can assume is irreducible, and where $a, b, \ldots, g, h$ are
+  integers that are either positive, negative or zero, as we wish. Let’s
+  designate by $\frac{p_0}{q_0}$, $\frac{p}{q}$ two consecutive reductions of
+  the continued fraction in which $x$ develops; and by $z$ the complete quotient
+  that comes after, so we have
+    $$\frac{p}{q} - x = \pm\frac{1}{q(qz + q_0)}$$
+  Finally, stating
+    $$f(p,q) = q^n f(\frac{p}{q}) = ap^n + bp^{n-1}q + \cdots + hq^n$$
+
+  By the decomposition of $f(\frac{p}{q})$ in factors, with the help of the
+  roots $x, x_1, \ldots, x_{n-1}$, we find
+    $$\frac{p}{q} - x = \pm\frac{1}{q(qz+q_0)}
+    = \frac{f(p,q)}{q^n\cdot a\left(\frac{p}{q}
+    - x\right)\cdots\left(\frac{p}{q}-x_{n-1}\right)}$$
+  However, in order to converge the reduction $\frac{p}{q}$ towards $x$, the
+  quantity
+    $$a\left(\frac{p}{q} - x_1\right)\cdots\left(\frac{p}{q} - x_{n-1}\right)$$
+  also converges towards a finite limit,
+    $$a(x-x_1)\cdots(x-x_{n-1})$$
+  there is thus a certain maximum $A$ below which the limit will always remain.
+  On the other hand, $f(p,q)$ is a whole number, at least equal to the unity,
+  abstraction made of the sign. We have thus
+    $$\frac{1}{q(qz+q_0)} > \frac{1}{Aq^n}$$
+  of which
+    $$z < Aq^{n-2} - \frac{q_0}{q} < Aq^{n-2}$$
+  inequality subsists, even more so, when we substitute the complete $z$
+  quotient of the integer part that it contains, namely the incomplete quotient
+  $\mu$. The theorem we had in mind is hereby proved simply, without having to
+  fall back on the Lagrange formula that we used earlier. We can, incidentally,
+  apply a similar method to diverse development genres of which the irrational
+  quantities are susceptible, and obtain that way interesting results.
+\end{displayquote}
+
+\paragraph{3.}
+
+Let’s add some developments to what preceded. Still regarding a real root $x$ of
+the equation, irreducible and with whole coefficients,
+  $$f(x)=ax^n + bx^{n-1} + \cdots + gx + h = 0$$
+which, if $n>1$, will also have these other roots $x_1, \ldots, x_{n-1}$,
+essentially irrational or imaginary and different to $x$. But let’s stop using,
+to get closer and closer to $x$, reductions of continued fractions, and let’s
+use any fraction $\frac{p}{q}$. In doing so, as here above,
+  $$f(p,q) = ap^n + bp^{n-1} q + \cdots + hq^n$$
+we will be sure, if $n>1$, that the absolute value of the integer $f(p,q)$ is
+at least equal to the unity, and we can again use the equation
+  $$\frac{p}{q} - x = \frac{f(p, q)}{q^n\cdot a\left(\frac{p}{q} - x_1\right)
+  \cdots\left(\frac{p}{q}- x_{n-1}\right)}$$
+this consequence, by designating by $A$ a certain fixed number, we must have
+(abstraction made of the sign) for all fractions $\frac{p}{q}$ which we now use,
+  $$\frac{p}{q} - x > \frac{1}{Aq^n}$$
+But the case of $n=1$ has to be, in turn, examined closely. This case could not
+be presented right away; because if we assume the continued fraction, in which
+we developed $x$, made up of an infinite number of terms, we had irrational $x$
+and $n > 1$. But here, still assuming infinite numbers of successive fractions
+$\frac{p}{q}$ of which $x$ is the limit, we need to consider the case $n = 1$
+as possible.
+
+To deal with this case, whether
+  $$f(x) = ax + b = 0$$
+or
+  $$\frac{p}{q} - x = \frac{ap + bq}{aq}$$
+\newpage
+
+\begin{equation}
+  ap + bq = 0
+\end{equation}
+
+\begin{equation}
+  x = \frac{p}{q}
+\end{equation}
+
+\begin{equation}
+  \frac{p}{q} - x > \frac{1}{aq}
+\end{equation}
+
+\begin{equation}
+  \frac{p}{q} - x > \frac{1}{Aq}
+\end{equation}
+
+\begin{equation}
+  \frac{p}{q} - x > \frac{1}{Aq^n}
+\end{equation}
+
+\begin{equation}
+  \frac{p}{q} - x > \frac{1}{Aq^n}
+\end{equation}
+
+\begin{equation}
+  \frac{p}{q} - x > \frac{1}{Aq^n}
+\end{equation}
+
+\begin{equation}
+  \frac{p}{q} - x > \frac{1}{Aq^i}
+\end{equation}
+
+\begin{equation}
+  \frac{p}{q} - x > \frac{1}{Aq}
+\end{equation}
+
+\begin{equation}
+  \frac{p}{q} - x > \frac{1}{Aq^2}
+\end{equation}
+
+\begin{equation}
+  \frac{p}{q} - x > \frac{1}{Aq^n}
+\end{equation}
+
+\begin{equation}
+  x = \frac{1}{l} + \frac{1}{l^{1 \cdot 2}} + \frac{1}{l^{1\cdot 2\cdot 3}}
+  + \cdots + \frac{1}{l^{1\cdot 2\cdot 3\cdots m}} + \cdots
+\end{equation}
+
+\begin{equation}
+  q = l^{1\cdot 2\cdots m}
+\end{equation}
+
+\begin{equation}
+  x - \frac{p}{q} = \frac{1}{l^{1\cdot 2\cdots m(m + 1)}} + \cdots
+  < \frac{2}{q^{m+1}}
+\end{equation}
+
+\begin{equation}
+  \frac{p}{q} - x > \frac{1}{Aq^n}
+\end{equation}
+
+\begin{equation}
+  x = \frac{k_1}{l} + \frac{k_2}{l^{1\cdot 2}} + \frac{k_3}{l^{1\cdot 2\cdot 3}}
+  + \cdots + \frac{k_m}{l^{1\cdot 2\cdots m}} + \cdots
+\end{equation}
+
+\begin{equation}
+  x = \frac{1}{l} + \frac{1}{l^4} + \frac{1}{l^9} + \cdots + \frac{1}{l^{m^2}}
+  + \cdots
+\end{equation}
+
+\begin{equation}
+  q = l^{m^2}
+\end{equation}
+
+\begin{equation}
+  x - \frac{p}{q} = \frac{1}{l{(m + 1)}^2} + \cdots < \frac{2}{l^{2m+1}\cdot q}
+\end{equation}
+
+\begin{equation}
+  x = \frac{1}{l} + \frac{1}{l_1} + \frac{1}{l_2} + \cdots + \frac{1}{l_{m-1}}
+  + \cdots
+\end{equation}
+
+\begin{equation}
+  l_m = l_{m-1}^{n+1}
+\end{equation}
+
+\begin{equation}
+  q = l_{m-1}
+\end{equation}
+
+\begin{equation}
+  x - \frac{p}{q}=\frac{1}{l_m}+\cdots < \frac{2}{q^{n+1}}
+\end{equation}
+
+\begin{equation}
+  x = \frac{1}{l} + \frac{1}{u_1} + \frac{1}{u_1 l_2} + \cdots
+  + \frac{1}{u_1 l_2 \cdots l_{m-1}} + \cdots
+\end{equation}
+
+\begin{equation}
+  ax^n + bx^{n-1} + \cdots + gx + h = 0
+\end{equation}
+
+\begin{equation}
+  \frac{p}{q} - x = \frac{f(p,q)}{q^n\cdot a\left(\frac{p}{q} - x_1\right)\cdots\left(\frac{p}{q}-x_{n-1}\right)}
+\end{equation}
+\end{document}
